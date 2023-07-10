@@ -36,3 +36,18 @@ if (event.code == 'Enter'){
      tablelist();
  }
 });
+
+
+//선생님 보내주신 코드 일부 
+let url = 'http://localhost:8080/selectAll/CI002';
+
+let request = fetch(url)
+  .then(response => {
+    response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch((data) => {
+    console.log(data)
+  });
